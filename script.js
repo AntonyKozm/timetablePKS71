@@ -1,5 +1,5 @@
 const getPlatform = () => {
-	return navigator.platform;
+	return navigator.userAgent;
 }
 
 const main = () => {
