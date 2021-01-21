@@ -2,7 +2,71 @@
 <html>
 <head>
 	<title>Расписание</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<styles>
+		td.coupleSet {
+	width: 200px;
+	height: 40px;
+	}
+
+	#couple {
+		background: #aeaeae;
+		color: black;
+		font-weight: bold;
+		font-size: 24px;
+	}
+
+	#teacher {
+		background: #e0e0e0;
+		color: black;
+		font-size: 18px;
+	}
+
+	#classroom {
+		background: #bcbcbc;
+		color: black;
+		width: 70px;
+		font-size: 30px;
+	}
+
+	#num {
+		background: #e0e0e0;
+		color: black;
+		width: 30px;
+		font-size: 30px;
+	}
+
+	body {
+		font-family: Calibri;
+	}
+
+	table {
+		text-align: center;
+		border-spacing: 0px;
+		border-collapse: collapse;
+	}
+
+	td {
+		padding: 0px;
+		border: 2px solid black;
+	}
+
+	#mondayTable {
+		display: none;
+	}
+
+	#mondayCheck:checked ~ label ~ #mondayTable {
+		display: block;
+	}
+
+	#tuesdayTable {
+		display: none;
+	}
+
+	#tuesdayCheck:checked ~ label ~ #tuesdayTable {
+		display: block;
+	}
+	</styles>
+	
 </head>
 <body>
 	<h1>Расписание 4 курс 2 семестр</h1>
