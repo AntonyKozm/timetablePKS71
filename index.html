@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Расписание</title>
+	<style>
+	body {
+		font-family: Calibri;
+		padding: 20px;
+	}
+
+	table {
+		text-align: center;
+		border-spacing: 0px;
+		border-collapse: collapse;
+	}
+
+	td {
+		padding: 0px;
+		border: 2px solid black;
+	}
+
+	label {
+		width: 250px;
+		height: 40px;
+		margin: 30px 0 30px 0;
+		display:inline-block;
+		font-size: 40px;
+	}
+
+
+	.coupleSet {
+		width: 200px;
+		height: 40px;
+	}
+
+	#couple {
+		background: #aeaeae;
+		color: black;
+		font-weight: bold;
+		font-size: 24px;
+	}
+
+	#teacher {
+		background: #e0e0e0;
+		color: black;
+		font-size: 18px;
+	}
+
+	#classroom {
+		background: #bcbcbc;
+		color: black;
+		width: 70px;
+		font-size: 30px;
+	}
+
+	#num {
+		background: #e0e0e0;
+		color: black;
+		width: 30px;
+		font-size: 30px;
+	}
+
+
+
+	#mondayTable {
+		display: none;
+	}
+
+	#tuesdayTable {
+		display: none;
+	}
+
+	#wednesdayTable {
+		display: none;
+	}
+
+	#thursdayTable {
+		display: none;
+	}
+
+	#fridayTable {
+		display: none;
+	}
+
+	#saturdayTable {
+		display: none;
+	}
+
+	#mondayCheck:checked ~ label ~ #mondayTable {
+		display: block;
+	}
+
+	#tuesdayCheck:checked ~ label ~ #tuesdayTable {
+		display: block;
+	}
+
+	#wednesdayCheck:checked ~ label ~ #wednesdayTable {
+		display: block;
+	}
+
+	#thursdayCheck:checked ~ label ~ #thursdayTable {
+		display: block;
+	}
+
+	#fridayCheck:checked ~ label ~ #fridayTable {
+		display: block;
+	}
+
+	#saturdayCheck:checked ~ label ~ #saturdayTable {
+		display: block;
+	}
+	</style>
+</head>
+<body>
+	<h1>Расписание 4 курс 2 семестр</h1>
+
+	<!-- Понедельник -->
+	<input type="checkbox" id="mondayCheck" hidden/>
+	<label for="mondayCheck">
+		Понедельник
+	</label>
+	<div id="mondayTable">
+		<table>
+			<tr>
+				<td rowspan="2" id="num">1</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">2</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">3</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">4</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
+	<!-- Вторник -->
+	<input type="checkbox" id="tuesdayCheck" hidden/>
+	<label for="tuesdayCheck">
+		Вторник
+	</label>
+	<div id="tuesdayTable">
+		<table>
+			<tr>
+				<td rowspan="2" id="num">1</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">2</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">3</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">4</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
+	<!-- Среда -->
+	<input type="checkbox" id="wednesdayCheck" hidden/>
+	<label for="wednesdayCheck">
+		Среда
+	</label>
+	<div id="wednesdayTable">
+		<table>
+			<tr>
+				<td rowspan="2" id="num">1</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">2</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">3</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">4</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
+	<!-- Четверг -->
+	<input type="checkbox" id="thursdayCheck" hidden/>
+	<label for="thursdayCheck">
+		Четверг
+	</label>
+	<div id="thursdayTable">
+		<table>
+			<tr>
+				<td rowspan="2" id="num">1</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">2</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">3</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">4</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
+	<!-- Пятница -->
+	<input type="checkbox" id="fridayCheck" hidden/>
+	<label for="fridayCheck">
+		Пятница
+	</label>
+	<div id="fridayTable">
+		<table>
+			<tr>
+				<td rowspan="2" id="num">1</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">2</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">3</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">4</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
+	<!-- Суббота -->
+	<input type="checkbox" id="saturdayCheck" hidden/>
+	<label for="saturdayCheck">
+		Суббота
+	</label>
+	<div id="saturdayTable">
+		<table>
+			<tr>
+				<td rowspan="2" id="num">1</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">2</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">3</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="num">4</td>
+				<td id="couple" class="coupleSet">Привет</td>
+				<td rowspan="2" id="classroom">303</td>
+			</tr>
+			<tr>
+				<td id="teacher" class="coupleSet">Андрей</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+</body>
+</html>
